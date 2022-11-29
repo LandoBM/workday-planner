@@ -5,11 +5,13 @@ $(document).ready(() => {
     var today = moment().format('dddd, MMM D, YYYY');
     $('#currentDay').html(today)
 
-    $('.saveBtn').on('click', () => {
-        console.log(this)
-        var txtBox = $(this).siblings('.description').val()
+    $('.saveBtn').on('click', (event) => {
+        event.preventDefault()
+        var buttonEL = event.target
+        console.log(buttonEL)
+        var txtBox = $(buttonEL).siblings('.description').val()
         // console.log(txtBox)
-        var timeBox =$(this).parent().attr('id')
+        var timeBox =$(buttonEL).parent().attr('id')
         // console.log(timeBox)
         localStorage.setItem(timeBox, txtBox)
         // colorAdjust()
