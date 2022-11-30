@@ -23,12 +23,12 @@ $(document).ready(() => {
     $('#10 .description').val(localStorage.getItem('10'))
     $('#11 .description').val(localStorage.getItem('11'))
     $('#12 .description').val(localStorage.getItem('12'))
-    $('#1 .description').val(localStorage.getItem('1'))
-    $('#2 .description').val(localStorage.getItem('2'))
-    $('#3 .description').val(localStorage.getItem('3'))
-    $('#4 .description').val(localStorage.getItem('4'))
-    $('#5 .description').val(localStorage.getItem('5'))
-    $('#6 .description').val(localStorage.getItem('6'))
+    $('#13 .description').val(localStorage.getItem('1'))
+    $('#14 .description').val(localStorage.getItem('2'))
+    $('#15 .description').val(localStorage.getItem('3'))
+    $('#16 .description').val(localStorage.getItem('4'))
+    $('#16 .description').val(localStorage.getItem('5'))
+    $('#17 .description').val(localStorage.getItem('6'))
 
     function colorAdjust() {
         var currentTime = moment().hours()
